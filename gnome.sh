@@ -2,7 +2,7 @@
 #this installs chrome, chrome-gnome-shell, guake and gnome-tweak-tool
 
 apt update
-apt install git chromium-browser chrome-gnome-shell guake gnome-tweak-tool
+apt install git chromium-browser chrome-gnome-shell guake gnome-tweak-tool -y
 
 
 #this installs dash to panel extension on ubuntu
