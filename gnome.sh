@@ -6,8 +6,14 @@ sudo apt install git chromium-browser chrome-gnome-shell guake gnome-tweak-tool 
 
 
 #this installs dash to panel extension on ubuntu
+if [ -f /usr/local/bin/gnomeshell-extension-manage ]
+then
+	echo "gnomeshell-extension-manage installed, moving on"
+else
+	sudo wget -O /usr/local/bin/gnomeshell-extension-manage "https://raw.githubusercontent.com/NicolasBernaerts/ubuntu-scripts/master/ubuntugnome/gnomeshell-extension-manage"
+fi
 
-sudo wget -O /usr/local/bin/gnomeshell-extension-manage "https://raw.githubusercontent.com/NicolasBernaerts/ubuntu-scripts/master/ubuntugnome/gnomeshell-extension-manage"
+
 sudo chmod +x /usr/local/bin/gnomeshell-extension-manage
 gnomeshell-extension-manage --install --extension-id 1160 --version 3.26 --user
 gnomeshell-extension-manage --install --extension-id 779 --version 3.26 --user
