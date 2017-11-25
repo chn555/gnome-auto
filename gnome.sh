@@ -11,4 +11,4 @@ sudo wget -O /usr/local/bin/gnomeshell-extension-manage "https://raw.githubuserc
 sudo chmod +x /usr/local/bin/gnomeshell-extension-manage
 gnomeshell-extension-manage --install --extension-id 1160 --version 3.26 --user
 gnomeshell-extension-manage --install --extension-id 779 --version 3.26 --user
-
+gnomeshell-extension-manage --install --extension-id 608 --version 3.26 --user
